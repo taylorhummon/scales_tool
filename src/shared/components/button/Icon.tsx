@@ -6,8 +6,8 @@ import {
 
 
 export enum IconName {
-  BigArrowUp = "BigArrowUp",
-  BigArrowDown = "BigArrowDown",
+  ArrowUp = "ArrowUp",
+  ArrowDown = "ArrowDown",
   Sharp = "Sharp",
   Flat = "Flat",
   BlueBallUp = "BlueBallUp",
@@ -28,11 +28,11 @@ export function Icon({
   iconName,
   className,
 }: IconParameters): React.ReactNode | null {
-  if (iconName === IconName.BigArrowUp) {
+  if (iconName === IconName.ArrowUp) {
     return (
       <g className={className}>
         <polyline
-          points="-14,7 0,-7 14,7 0,-4"
+          points="-10,5 0,-5 10,5 0,-3"
           strokeWidth="1"
           stroke="black"
           fill="black"
@@ -40,11 +40,11 @@ export function Icon({
       </g>
     )
   }
-  if (iconName === IconName.BigArrowDown) {
+  if (iconName === IconName.ArrowDown) {
     return (
       <g className={className}>
         <polygon
-          points="-14,-7 0,7 14,-8 0,4"
+          points="-10,-5 0,5 10,-5 0,3"
           strokeWidth="1"
           stroke="black"
           fill="black"
@@ -184,18 +184,18 @@ export function Icon({
     return (
       <g className={className}>
         <line
-          x1="-5"
+          x1="-6"
           y1="0"
-          x2="5"
+          x2="6"
           y2="0"
           strokeWidth="1.5"
           stroke="black"
         />
         <line
           x1="0"
-          y1="-5"
+          y1="-6"
           x2="0"
-          y2="5"
+          y2="6"
           strokeWidth="1.5"
           stroke="black"
         />
@@ -206,9 +206,9 @@ export function Icon({
     return (
       <g className={className}>
         <line
-          x1="-5"
+          x1="-6"
           y1="0"
-          x2="5"
+          x2="6"
           y2="0"
           strokeWidth="1.5"
           stroke="black"

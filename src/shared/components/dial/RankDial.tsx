@@ -21,7 +21,7 @@ export function RankDial({
 }: RankDialParameters): React.ReactNode {
   const { motion, currentMusicalKey, nextMusicalKey } = derived
   const pairs = EXTENDED_POSITIONS.map(
-    (position) => ({ position, rank: currentMusicalKey.rank + position })
+    (position) => ({ position, rank: currentMusicalKey.rank - position })
   ).filter(
     ({ rank }) => isBetweenInclusive(rank, MIN_RANK, MAX_RANK)
   )
@@ -39,7 +39,7 @@ export function RankDial({
         <DialValue
           key={position}
           currentPosition={position}
-          nextPosition={position - rankDifference}
+          nextPosition={position + rankDifference}
         >
           {getFancyRank(rank)}
         </DialValue>

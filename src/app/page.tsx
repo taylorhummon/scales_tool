@@ -11,13 +11,13 @@ export default function Page() {
       </h1>
       <ul className={styles["instructions"]}>
         <li>
-          Arrow buttons change keys within a mode.
-        </li>
-        <li>
-          Sharp and flat buttons move between parallel keys.
+          Plus and minus buttons change keys within a mode.
         </li>
         <li>
           Blue dot buttons move between relative keys.
+        </li>
+        <li>
+          Sharp and flat buttons move between parallel keys.
         </li>
       </ul>
       <ScalesTool />

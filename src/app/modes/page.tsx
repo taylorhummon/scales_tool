@@ -11,7 +11,7 @@ export default function Page() {
       </h1>
       <ul className={styles["instructions"]}>
         <li>
-          Plus and minus buttons change the mode.
+          Arrow buttons change the mode.
         </li>
       </ul>
       <ModesTool />

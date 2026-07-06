@@ -22,7 +22,7 @@ export function AssembledSlider({
   return (
     <g className={className}>
       <IconButton
-        iconName={IconName.Plus}
+        iconName={IconName.ArrowUp}
         width={BUTTON_WIDTH}
         height={BUTTON_HEIGHT}
         buttonState={getButtonState(derived, Motion.IncrementRoot)}
@@ -34,7 +34,7 @@ export function AssembledSlider({
         derived={derived}
       />
       <IconButton
-        iconName={IconName.Minus}
+        iconName={IconName.ArrowDown}
         width={BUTTON_WIDTH}
         height={BUTTON_HEIGHT}
         buttonState={getButtonState(derived, Motion.DecrementRoot)}

@@ -38,7 +38,7 @@ export function AssembledDials({
           clickHandler={buttonClickHandler}
           width={LARGE_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.BigArrowUp}
+          iconName={IconName.Plus}
           onClickMotion={Motion.IncrementBoth}
           className={assembledDialsCssModule["top"]}
           dataTestid="increment-both"
@@ -48,20 +48,20 @@ export function AssembledDials({
           clickHandler={buttonClickHandler}
           width={SMALL_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.Sharp}
-          onClickMotion={Motion.IncrementRank}
+          iconName={IconName.BlueBallUp}
+          onClickMotion={Motion.IncrementRoot}
           className={assembledDialsCssModule["bottom-left"]}
-          dataTestid="increment-rank"
+          dataTestid="increment-root"
         />
         <DialButton
           derived={derived}
           clickHandler={buttonClickHandler}
           width={SMALL_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.BlueBallUp}
-          onClickMotion={Motion.IncrementRoot}
+          iconName={IconName.Sharp}
+          onClickMotion={Motion.IncrementRank}
           className={assembledDialsCssModule["bottom-right"]}
-          dataTestid="increment-root"
+          dataTestid="increment-rank"
         />
       </g>
       <DialHighlighter
@@ -85,27 +85,27 @@ export function AssembledDials({
           clickHandler={buttonClickHandler}
           width={SMALL_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.Flat}
-          onClickMotion={Motion.DecrementRank}
+          iconName={IconName.BlueBallDown}
+          onClickMotion={Motion.DecrementRoot}
           className={assembledDialsCssModule["top-left"]}
-          dataTestid="decrement-rank"
+          dataTestid="decrement-root"
         />
         <DialButton
           derived={derived}
           clickHandler={buttonClickHandler}
           width={SMALL_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.BlueBallDown}
-          onClickMotion={Motion.DecrementRoot}
+          iconName={IconName.Flat}
+          onClickMotion={Motion.DecrementRank}
           className={assembledDialsCssModule["top-right"]}
-          dataTestid="decrement-root"
+          dataTestid="decrement-rank"
         />
         <DialButton
           derived={derived}
           clickHandler={buttonClickHandler}
           width={LARGE_BUTTON_WIDTH}
           height={BUTTON_HEIGHT}
-          iconName={IconName.BigArrowDown}
+          iconName={IconName.Minus}
           onClickMotion={Motion.DecrementBoth}
           className={assembledDialsCssModule["bottom"]}
           dataTestid="decrement-both"
