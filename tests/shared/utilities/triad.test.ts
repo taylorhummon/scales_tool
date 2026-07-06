@@ -10,7 +10,7 @@ test("getModeQuality() works for major", () => {
   expect(
     buildInclusiveRange(0, 6).map((triadOffset) => getTriadQuality(musicalKey, triadOffset))
   ).toStrictEqual(
-    [ "major", "minor", "minor",  "major",  "major",  "minor", "diminished" ]
+    [ "Major", "Minor", "Minor",  "Major",  "Major",  "Minor", "Diminished" ]
   )
 })
 
@@ -19,7 +19,7 @@ test("getModeQuality() works for minor", () => {
   expect(
     buildInclusiveRange(0, 6).map((triadOffset) => getTriadQuality(musicalKey, triadOffset))
   ).toStrictEqual(
-    [ "minor", "diminished", "major", "minor", "minor",  "major",  "major" ]
+    [ "Minor", "Diminished", "Major", "Minor", "Minor",  "Major",  "Major" ]
   )
 })
 
@@ -28,6 +28,6 @@ test("getModeQuality() works for Dorian", () => {
   expect(
     buildInclusiveRange(0, 6).map((triadOffset) => getTriadQuality(musicalKey, triadOffset))
   ).toStrictEqual(
-    [ "minor", "minor",  "major",  "major", "minor", "diminished", "major",  ]
+    [ "Minor", "Minor",  "Major",  "Major", "Minor", "Diminished", "Major" ]
   )
 })

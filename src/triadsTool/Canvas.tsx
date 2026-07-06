@@ -1,5 +1,5 @@
 import { AssembledDial } from "@triadsTool/AssembledDial"
-import { Caption } from "@triadsTool/Caption"
+import { Title } from "@triadsTool/Title"
 
 import { RotateButton } from "@shared/components/button/RotateButton"
 import { Clock } from "@shared/components/clock/Clock"
@@ -21,13 +21,21 @@ export function Canvas({
   return (
     <svg
       className={canvasCssModule["canvas"]}
-      viewBox="0 0 430 370"
+      viewBox="0 0 430 380"
       xmlns="http://www.w3.org/2000/svg"
     >
       <AssembledDial
         derived={derived}
         buttonClickHandler={buttonClickHandler}
         className={canvasCssModule["assembled-rank-dial"]}
+      />
+      <Title
+        derived={derived}
+        className={canvasCssModule["title"]}
+      />
+      <Clock
+        derived={derived}
+        className={canvasCssModule["clock"]}
       />
       <RotateButton
         derived={derived}
@@ -42,14 +50,6 @@ export function Canvas({
         onClickMotion={Motion.RotateTriadCW}
         className={canvasCssModule["rotate-button-cw"]}
         dataTestid="rotate-triad-cw"
-      />
-      <Clock
-        derived={derived}
-        className={canvasCssModule["clock"]}
-      />
-      <Caption
-        derived={derived}
-        className={canvasCssModule["caption"]}
       />
     </svg>
   )

@@ -4,21 +4,21 @@
 }
 
 .assembled-rank-dial {
-  offset-path: path("M 40 200");
+  offset-path: path("M 40 180");
 }
 
-.rotate-button-ccw {
-  offset-path: path("M 265 30");
-}
-
-.rotate-button-cw {
-  offset-path: path("M 335 30");
+.title {
+  offset-path: path("M 300 30");
 }
 
 .clock {
-  offset-path: path("M 300 200");
+  offset-path: path("M 300 180");
 }
 
-.caption {
-  offset-path: path("M 300 365");
+.rotate-button-ccw {
+  offset-path: path("M 265 350");
+}
+
+.rotate-button-cw {
+  offset-path: path("M 335 350");
 }

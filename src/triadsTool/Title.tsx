@@ -1,4 +1,4 @@
-import { Caption as CaptionCommon } from "@shared/components/caption/Caption"
+import { Title as TitleCommon } from "@shared/components/title/Title"
 import { LabelsOption } from "@shared/utilities/clock"
 import { type Derived } from "@shared/utilities/derived"
 import { getBalancedMod7 } from "@shared/utilities/math"
@@ -7,24 +7,23 @@ import { solfegeLetterFromButterflyIndex } from "@shared/utilities/solfegeLetter
 import { getTriadQuality } from "@shared/utilities/triad"
 
 
-interface CaptionParameters {
+interface TitleParameters {
   derived: Derived,
   className?: string,
 }
 
-export function Caption({
+export function Title({
   derived,
   className,
-}: CaptionParameters): React.ReactNode {
+}: TitleParameters): React.ReactNode {
   return (
-    <CaptionCommon
-      firstLine={getFirstLine(derived)}
-      className={className}
-    />
+    <TitleCommon className={className}>
+      {getText(derived)}
+    </TitleCommon>
   )
 }
 
-function getFirstLine(
+function getText(
   derived: Derived,
 ): React.ReactNode {
   if (derived.clockSettings.insideLabelsOption === LabelsOption.Ordinary) {
@@ -46,7 +45,7 @@ function whenUsingOrdinaryLabels(
 
   return (
     <>
-      The triad built on <tspan className="fixed-width-font">{triadOffsetNote.name}</tspan> is {quality}.
+      The <tspan className="fixed-width-font">{triadOffsetNote.name}</tspan> {quality} Triad
     </>
   )
 }
@@ -60,7 +59,7 @@ function whenUsingSimplifiedLabels(
 
   return (
     <>
-      The triad built on <tspan className="fixed-width-font">{simplifiedLetter}</tspan> is {quality}.
+      The <tspan className="fixed-width-font">{simplifiedLetter}</tspan> {quality} Triad
     </>
   )
 }

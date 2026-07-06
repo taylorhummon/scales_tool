@@ -12,9 +12,9 @@ export function getTriadQuality(
   const note3 = musicalKey.noteFromSolfegeLetter(solfegeLetterFromButterflyIndex(getBalancedMod7(triadOffset + 4)))
   const diff1 = getRemainder(7 * (note2.value - note1.value), 12)
   const diff2 = getRemainder(7 * (note3.value - note2.value), 12)
-  if (diff1 === 4 && diff2 === 3) return "major"
-  if (diff1 === 3 && diff2 === 4) return "minor"
-  if (diff1 === 3 && diff2 === 3) return "diminished"
-  if (diff1 === 4 && diff2 === 4) return "augmented"
+  if (diff1 === 4 && diff2 === 3) return "Major"
+  if (diff1 === 3 && diff2 === 4) return "Minor"
+  if (diff1 === 3 && diff2 === 3) return "Diminished"
+  if (diff1 === 4 && diff2 === 4) return "Augmented"
   throw Error("Unexpected triad quality")
 }

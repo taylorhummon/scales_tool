@@ -1,4 +1,5 @@
 import { AssembledSlider } from "@modesTool/AssembledSlider"
+import { Title } from "@modesTool/Title"
 import { Caption } from "@modesTool/Caption"
 
 import { Clock } from "@shared/components/clock/Clock"
@@ -27,6 +28,10 @@ export function Canvas({
         derived={derived}
         buttonClickHandler={buttonClickHandler}
         className={canvasCssModule["assembled-slider"]}
+      />
+      <Title
+        derived={derived}
+        className={canvasCssModule["title"]}
       />
       <Clock
         derived={derived}

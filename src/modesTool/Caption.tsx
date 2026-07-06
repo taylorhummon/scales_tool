@@ -14,26 +14,12 @@ export function Caption({
   return (
     <CaptionCommon
       firstLine={getFirstLine(derived)}
-      secondLine={getSecondLine(derived)}
       className={className}
     />
   )
 }
 
 function getFirstLine(
-  derived: Derived,
-) {
-  const { currentMusicalKey } = derived
-  if (currentMusicalKey.mode === -2) {
-    return <>The major mode.</>
-  }
-  if (currentMusicalKey.mode === 1) {
-    return <>The minor mode.</>
-  }
-  return <>The {currentMusicalKey.modeName} mode.</>
-}
-
-function getSecondLine(
   derived: Derived,
 ): React.ReactNode {
   const { currentMusicalKey } = derived
