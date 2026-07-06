@@ -35,9 +35,9 @@ corresponds to a number as follows.
     C♯      5
     G♯      6
 
-**position**: A number that represents where a note is located on a dial. Negative three is at 
-the top, zero is at the center, and three is at the bottom. A note may have a position outside of 
-the range [-3, 3], but it won't be displayed on the dial.
+**position**: A number that represents where a note is located on a dial or slider. Three is at the 
+top, zero is at the center, and negative three is at the bottom. A note may have a position outside 
+of the range [-3, 3], but it won't be displayed on the dial.
 
 **hour**: A number from 0 to 11 that represents where a note is located on the clock face.
 We prefer to use 0 instead of 12 to match conventions with modular arithemtic.

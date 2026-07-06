@@ -32,7 +32,7 @@ export function Icon({
     return (
       <g className={className}>
         <polyline
-          points="-10,5 0,-5 10,5 0,-3"
+          points="-9,5 0,-5 9,5 0,-3"
           strokeWidth="1"
           stroke="black"
           fill="black"
@@ -44,7 +44,7 @@ export function Icon({
     return (
       <g className={className}>
         <polygon
-          points="-10,-5 0,5 10,-5 0,3"
+          points="-9,-5 0,5 9,-5 0,3"
           strokeWidth="1"
           stroke="black"
           fill="black"

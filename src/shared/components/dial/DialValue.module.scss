@@ -1,5 +1,5 @@
 @use "@shared/utilities/animation" as animation;
-@use "@shared/utilities/dial" as dial;
+@use "@shared/utilities/position" as position;
 
 
 $unhighlighted: 0.45;
@@ -22,7 +22,7 @@ $highlighted: 1;
 
   @for $position from -4 through 4 {
     &.position-#{$position} {
-      offset-path: dial.position-still-path($position);
+      offset-path: position.still-path($position);
     }
   }
 

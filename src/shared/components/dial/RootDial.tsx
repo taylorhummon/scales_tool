@@ -38,7 +38,7 @@ export function RootDial({
         <DialValue
           key={position}
           currentPosition={position}
-          nextPosition={position + rootDifference}
+          nextPosition={position - rootDifference}
         >
           {note.name}
         </DialValue>

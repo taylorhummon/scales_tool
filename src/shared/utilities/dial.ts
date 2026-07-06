@@ -8,5 +8,5 @@ export function noteAt(
   musicalKey: MusicalKey,
   position: number,
 ): Note {
-  return new Note({ value: musicalKey.root - position })
+  return new Note({ value: musicalKey.root + position })
 }

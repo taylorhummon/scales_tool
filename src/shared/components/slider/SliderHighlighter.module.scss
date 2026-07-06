@@ -1,6 +1,6 @@
 @use "@shared/utilities/animation" as animation;
 @use "@shared/utilities/path" as path;
-@use "@shared/utilities/slider" as slider;
+@use "@shared/utilities/position" as position;
 
 
 @keyframes move {
@@ -17,7 +17,7 @@
 
   @for $position from -3 through 3 {
     &.position-#{$position} {
-      offset-path: slider.position-still-path($position);
+      offset-path: position.still-path($position);
     }
   }
 
@@ -26,12 +26,12 @@
 
     &.move-from-#{$position-a}-to-#{$position-b} {
       animation: move animation.$duration ease-in-out 1 forwards;
-      offset-path: path.linear-path(slider.point($position-a), slider.point($position-b));
+      offset-path: path.linear-path(position.point($position-a), position.point($position-b));
     }
 
     &.move-from-#{$position-b}-to-#{$position-a} {
       animation: move animation.$duration ease-in-out 1 forwards;
-      offset-path: path.linear-path(slider.point($position-b), slider.point($position-a));
+      offset-path: path.linear-path(position.point($position-b), position.point($position-a));
     }
   }
 }

@@ -26,8 +26,10 @@ export function Dial({
         {label}
       </text>
       <g clipPath={`url(#${clipPathId})`}>
-        <g className={getClassName(isIncrementing, isDecrementing)}>
-          {children}
+        <g className={dialCssModule["dial-inner"]}>
+          <g className={getClassName(isIncrementing, isDecrementing)}>
+            {children}
+          </g>
         </g>
       </g>
     </g>
@@ -38,11 +40,11 @@ function getClassName(
   isIncrementing: boolean,
   isDecrementing: boolean,
 ): string {
-  const classNames = [ "dial-inner" ]
+  const classNames = [ "dial-movable" ]
   if (isIncrementing) {
-    classNames.push("move-up")
-  } else if (isDecrementing) {
     classNames.push("move-down")
+  } else if (isDecrementing) {
+    classNames.push("move-up")
   }
   return buildClassName(dialCssModule, classNames)
 }

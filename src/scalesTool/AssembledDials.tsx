@@ -25,10 +25,10 @@ export function AssembledDials({
       <defs>
         <clipPath id={CLIP_PATH_ID}>
           <rect
-            x="-30"
-            y="-103"
             width="60"
             height="206"
+            x="-30"
+            y="-103"
           />
         </clipPath>
       </defs>
