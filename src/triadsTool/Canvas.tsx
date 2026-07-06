@@ -36,6 +36,13 @@ export function Canvas({
         className={canvasCssModule["rotate-button-ccw"]}
         dataTestid="rotate-triad-ccw"
       />
+      <RotateButton
+        derived={derived}
+        clickHandler={buttonClickHandler}
+        onClickMotion={Motion.RotateTriadCW}
+        className={canvasCssModule["rotate-button-cw"]}
+        dataTestid="rotate-triad-cw"
+      />
       <Clock
         derived={derived}
         className={canvasCssModule["clock"]}
@@ -43,13 +50,6 @@ export function Canvas({
       <Caption
         derived={derived}
         className={canvasCssModule["caption"]}
-      />
-      <RotateButton
-        derived={derived}
-        clickHandler={buttonClickHandler}
-        onClickMotion={Motion.RotateTriadCW}
-        className={canvasCssModule["rotate-button-cw"]}
-        dataTestid="rotate-triad-cw"
       />
     </svg>
   )
