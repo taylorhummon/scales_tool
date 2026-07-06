@@ -1,5 +1,6 @@
 .canvas {
   display: block;
+  max-width: 450px;
 }
 
 .assembled-slider {
@@ -7,9 +8,9 @@
 }
 
 .clock {
-  offset-path: path("M 320 145");
+  offset-path: path("M 300 182");
 }
 
 .caption {
-  offset-path: path("M 320 305");
+  offset-path: path("M 300 335");
 }

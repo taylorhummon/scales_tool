@@ -21,7 +21,7 @@ export function Canvas({
   return (
     <svg
       className={canvasCssModule["canvas"]}
-      viewBox="0 0 600 340"
+      viewBox="0 0 450 370"
       xmlns="http://www.w3.org/2000/svg"
     >
       <AssembledSlider

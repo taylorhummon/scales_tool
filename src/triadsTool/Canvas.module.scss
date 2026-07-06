@@ -1,23 +1,24 @@
 .canvas {
   display: block;
+  max-width: 430px;
 }
 
 .assembled-rank-dial {
-  offset-path: path("M 40 182");
+  offset-path: path("M 40 200");
 }
 
 .rotate-button-ccw {
-  offset-path: path("M 160 145");
-}
-
-.clock {
-  offset-path: path("M 350 145");
-}
-
-.caption {
-  offset-path: path("M 350 305");
+  offset-path: path("M 265 30");
 }
 
 .rotate-button-cw {
-  offset-path: path("M 540 145");
+  offset-path: path("M 335 30");
+}
+
+.clock {
+  offset-path: path("M 300 200");
+}
+
+.caption {
+  offset-path: path("M 300 365");
 }
