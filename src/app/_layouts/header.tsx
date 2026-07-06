@@ -19,7 +19,7 @@ const ABOUT_LINK = { url: "/about/", label: "About" }
 export default function Header() {
   const [ opened, { toggle, close } ] = useDisclosure(false)
   const pathname = usePathname()
-  const navigationLinks = TOOL_LINKS.map(({ url, label }) =>
+  const toolLinks = TOOL_LINKS.map(({ url, label }) =>
     <NavigationLink
       key={label}
       url={url}
@@ -27,19 +27,18 @@ export default function Header() {
       isActive={pathname === url}
     />
   )
+  const aboutLink = (
+    <NavigationLink
+      url={ABOUT_LINK.url}
+      label={ABOUT_LINK.label}
+      isActive={pathname === ABOUT_LINK.url}
+    />
+  )
 
   return (
     <header className={styles["header"]}>
       <div className={styles["inner"]}>
         <Group>
-          <Burger
-            opened={opened}
-            onClick={toggle}
-            color="white"
-            size="sm"
-            hiddenFrom="sm"
-            aria-label="Toggle navigation"
-          />
           <Image
             src="/logo.svg"
             alt="Visual Music Tools"
@@ -51,13 +50,22 @@ export default function Header() {
             gap={5}
             visibleFrom="sm"
           >
-            {navigationLinks}
+            {toolLinks}
           </Group>
         </Group>
-        <NavigationLink
-          url={ABOUT_LINK.url}
-          label={ABOUT_LINK.label}
-          isActive={pathname === ABOUT_LINK.url}
+        <Group
+          visibleFrom="sm"
+        >
+          {aboutLink}
+        </Group>
+        <Burger
+          opened={opened}
+          onClick={toggle}
+          color="white"
+          size="sm"
+          hiddenFrom="sm"
+          ml={30}
+          aria-label="Toggle navigation"
         />
       </div>
 
@@ -78,7 +86,14 @@ export default function Header() {
           <Divider
             my="sm"
           />
-          {navigationLinks}
+          {toolLinks}
+          <Divider
+            my="sm"
+          />
+          {aboutLink}
+          <Divider
+            my="sm"
+          />
         </ScrollArea>
       </Drawer>
     </header>
