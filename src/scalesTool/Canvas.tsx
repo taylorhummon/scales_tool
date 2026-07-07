@@ -1,4 +1,5 @@
 import { AssembledDials } from "@scalesTool/AssembledDials"
+import { Caption } from "@scalesTool/Caption"
 import { Title } from "@scalesTool/Title"
 
 import { SwapButton } from "@shared/components/button/SwapButton"
@@ -37,6 +38,10 @@ export function Canvas({
       <Title
         derived={derived}
         className={canvasCssModule["title"]}
+      />
+      <Caption
+        derived={derived}
+        className={canvasCssModule["caption"]}
       />
       <Clock
         derived={derived}
