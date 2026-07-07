@@ -3,7 +3,8 @@
 import { useRef, useReducer, useEffect, useCallback } from "react"
 
 import { getInitialState } from "@modesTool/initialState"
-import { Canvas } from "@modesTool/Canvas"
+import { CanvasLeft } from "@modesTool/CanvasLeft"
+import { CanvasRight } from "@modesTool/CanvasRight"
 
 import { ActionType } from "@shared/utilities/action"
 import { AnimationOption } from "@shared/utilities/clock"
@@ -16,6 +17,8 @@ import {
   getNextTriadOffset,
 } from "@shared/utilities/motion"
 import { reducer } from "@shared/utilities/state"
+
+import modesToolCssModule from "./ModesTool.module.scss"
 
 
 export function ModesTool(
@@ -93,10 +96,16 @@ export function ModesTool(
 
   return (
     <div ref={domNodeRef}>
-      <Canvas
-        derived={derived}
-        buttonClickHandler={buttonClickHandler}
-      />
+      <div className={modesToolCssModule["canvases"]}>
+        <CanvasLeft
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+        <CanvasRight
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+      </div>
     </div>
   )
 }

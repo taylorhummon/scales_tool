@@ -1,0 +1,20 @@
+.canvas-right {
+  display: block;
+  max-width: 260px;
+}
+
+.title {
+  offset-path: path("M 130 30");
+}
+
+.clock {
+  offset-path: path("M 130 180");
+}
+
+.rotate-button-ccw {
+  offset-path: path("M 75 350");
+}
+
+.rotate-button-cw {
+  offset-path: path("M 185 350");
+}

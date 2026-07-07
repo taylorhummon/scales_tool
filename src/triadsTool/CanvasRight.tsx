@@ -1,4 +1,3 @@
-import { AssembledDial } from "@triadsTool/AssembledDial"
 import { Title } from "@triadsTool/Title"
 
 import { RotateButton } from "@shared/components/button/RotateButton"
@@ -6,49 +5,44 @@ import { Clock } from "@shared/components/clock/Clock"
 import { type Derived } from "@shared/utilities/derived"
 import { Motion } from "@shared/utilities/motion"
 
-import canvasCssModule from "./Canvas.module.scss"
+import canvasRightCssModule from "./CanvasRight.module.scss"
 
 
-interface CanvasParameters {
+interface CanvasRightParameters {
   derived: Derived,
   buttonClickHandler: (motion: Motion) => void,
 }
 
-export function Canvas({
+export function CanvasRight({
   derived,
   buttonClickHandler,
-}: CanvasParameters): React.ReactNode {
+}: CanvasRightParameters): React.ReactNode {
   return (
     <svg
-      className={canvasCssModule["canvas"]}
-      viewBox="0 0 430 380"
+      className={canvasRightCssModule["canvas-right"]}
+      viewBox="0 0 260 380"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <AssembledDial
-        derived={derived}
-        buttonClickHandler={buttonClickHandler}
-        className={canvasCssModule["assembled-rank-dial"]}
-      />
       <Title
         derived={derived}
-        className={canvasCssModule["title"]}
+        className={canvasRightCssModule["title"]}
       />
       <Clock
         derived={derived}
-        className={canvasCssModule["clock"]}
+        className={canvasRightCssModule["clock"]}
       />
       <RotateButton
         derived={derived}
         clickHandler={buttonClickHandler}
         onClickMotion={Motion.RotateTriadCCW}
-        className={canvasCssModule["rotate-button-ccw"]}
+        className={canvasRightCssModule["rotate-button-ccw"]}
         dataTestid="rotate-triad-ccw"
       />
       <RotateButton
         derived={derived}
         clickHandler={buttonClickHandler}
         onClickMotion={Motion.RotateTriadCW}
-        className={canvasCssModule["rotate-button-cw"]}
+        className={canvasRightCssModule["rotate-button-cw"]}
         dataTestid="rotate-triad-cw"
       />
     </svg>

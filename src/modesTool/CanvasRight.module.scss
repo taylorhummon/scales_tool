@@ -1,0 +1,16 @@
+.canvas-right {
+  display: block;
+  max-width: 300px;
+}
+
+.title {
+  offset-path: path("M 150 30");
+}
+
+.clock {
+  offset-path: path("M 150 182");
+}
+
+.caption {
+  offset-path: path("M 150 340");
+}

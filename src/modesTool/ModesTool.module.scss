@@ -1,0 +1,11 @@
+.canvases {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (min-width: 500px) {
+  .canvases {
+    gap: 80px;
+  }
+}

@@ -3,7 +3,8 @@
 import { useRef, useReducer, useEffect, useCallback } from "react"
 
 import { getInitialState } from "@triadsTool/initialState"
-import { Canvas } from "@triadsTool/Canvas"
+import { CanvasLeft } from "@triadsTool/CanvasLeft"
+import { CanvasRight } from "@triadsTool/CanvasRight"
 import { SettingsPanel } from "@triadsTool/SettingsPanel"
 
 import { ActionType } from "@shared/utilities/action"
@@ -17,6 +18,8 @@ import {
   getNextTriadOffset,
 } from "@shared/utilities/motion"
 import { reducer } from "@shared/utilities/state"
+
+import triadsToolCssModule from "./TriadsTool.module.scss"
 
 
 export function TriadsTool(
@@ -94,10 +97,16 @@ export function TriadsTool(
 
   return (
     <div ref={domNodeRef}>
-      <Canvas
-        derived={derived}
-        buttonClickHandler={buttonClickHandler}
-      />
+      <div className={triadsToolCssModule["canvases"]}>
+        <CanvasLeft
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+        <CanvasRight
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+      </div>
       <SettingsPanel
         clockSettings={clockSettings}
         dispatch={dispatch}
