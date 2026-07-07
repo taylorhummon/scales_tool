@@ -3,7 +3,8 @@
 import { useRef, useReducer, useEffect, useCallback } from "react"
 
 import { getInitialState } from "@scalesTool/initialState"
-import { Canvas } from "@scalesTool/Canvas"
+import { CanvasLeft } from "@scalesTool/CanvasLeft"
+import { CanvasRight } from "@scalesTool/CanvasRight"
 import { SettingsPanel } from "@scalesTool/SettingsPanel"
 
 import { ActionType } from "@shared/utilities/action"
@@ -17,6 +18,8 @@ import {
   getNextTriadOffset,
 } from "@shared/utilities/motion"
 import { reducer } from "@shared/utilities/state"
+
+import scalesToolCssModule from "./ScalesTool.module.scss"
 
 
 export function ScalesTool(
@@ -94,10 +97,16 @@ export function ScalesTool(
 
   return (
     <div ref={domNodeRef}>
-      <Canvas
-        derived={derived}
-        buttonClickHandler={buttonClickHandler}
-      />
+      <div className={scalesToolCssModule["canvases"]}>
+        <CanvasLeft
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+        <CanvasRight
+          derived={derived}
+          buttonClickHandler={buttonClickHandler}
+        />
+      </div>
       <SettingsPanel
         clockSettings={clockSettings}
         dispatch={dispatch}

@@ -1,0 +1,20 @@
+.canvas-right {
+  display: block;
+  width: 345px;
+}
+
+.title {
+  offset-path: path("M 170 25");
+}
+
+.caption {
+  offset-path: path("M 170 50");
+}
+
+.clock {
+  offset-path: path("M 170 230");
+}
+
+.swap-button {
+  offset-path: path("M 170 425");
+}
