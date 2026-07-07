@@ -45,7 +45,7 @@ function whenUsingOrdinaryLabels(
 
   return (
     <>
-      The <tspan className="fixed-width-font">{triadOffsetNote.name}</tspan> {quality} Triad
+      The <tspan className="fixed-width-font bold">{triadOffsetNote.name}</tspan> {quality} Triad
     </>
   )
 }
@@ -59,7 +59,7 @@ function whenUsingSimplifiedLabels(
 
   return (
     <>
-      The <tspan className="fixed-width-font">{simplifiedLetter}</tspan> {quality} Triad
+      The <tspan className="fixed-width-font bold">{simplifiedLetter}</tspan> {quality} Triad
     </>
   )
 }

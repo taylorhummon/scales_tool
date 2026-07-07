@@ -90,6 +90,10 @@ select {
   font-family: var(--fixed-width-font);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 svg text {
   user-select: none;
 }
