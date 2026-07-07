@@ -12,43 +12,13 @@ export function Caption({
   className,
 }: CaptionParameters): React.ReactNode {
   return (
-    <CaptionCommon
-      firstLine={getFirstLine(derived)}
-      secondLine={getSecondLine(derived)}
-      thirdLine={getThirdLine(derived)}
-      className={className}
-    />
+    <CaptionCommon className={className}>
+      {getCaptionText(derived)}
+    </CaptionCommon>
   )
 }
 
-function getFirstLine(
-  derived: Derived,
-): React.ReactNode {
-  const noteFontClassName = "fixed-width-font"
-  const { currentMusicalKey } = derived
-  const rootNoteName = currentMusicalKey.rootNote.name
-  if (currentMusicalKey.mode === -2) {
-    return (
-      <>
-        <tspan className={noteFontClassName}>{rootNoteName}</tspan> major.
-      </>
-    )
-  }
-  if (currentMusicalKey.mode === 1) {
-    return (
-      <>
-        <tspan className={noteFontClassName}>{rootNoteName}</tspan> minor.
-      </>
-    )
-  }
-  return (
-    <>
-      The {currentMusicalKey.modeName} mode on <tspan className={noteFontClassName}>{rootNoteName}</tspan>.
-    </>
-  )
-}
-
-function getSecondLine(
+function getCaptionText(
   derived: Derived,
 ): React.ReactNode {
   const { currentMusicalKey } = derived
@@ -86,14 +56,3 @@ const WRITTEN_OUT_NUMBERS = [
   "Thirteen",
   "Fourteen",
 ]
-
-function getThirdLine(
-  derived: Derived,
-): React.ReactNode {
-  const { currentIsCaterpillarPattern } = derived
-  if (currentIsCaterpillarPattern) {
-    return "Caterpillar pattern."
-  } else {
-    return "Butterfly pattern."
-  }
-}

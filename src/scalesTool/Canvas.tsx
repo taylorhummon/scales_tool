@@ -1,5 +1,5 @@
 import { AssembledDials } from "@scalesTool/AssembledDials"
-import { Caption } from "@scalesTool/Caption"
+import { Title } from "@scalesTool/Title"
 
 import { SwapButton } from "@shared/components/button/SwapButton"
 import { Clock } from "@shared/components/clock/Clock"
@@ -22,7 +22,7 @@ export function Canvas({
   return (
     <svg
       className={canvasCssModule["canvas"]}
-      viewBox="0 0 600 475"
+      viewBox="0 0 600 450"
       xmlns="http://www.w3.org/2000/svg"
     >
       <AssembledDials
@@ -34,18 +34,18 @@ export function Canvas({
         derived={derived}
         className={canvasCssModule["mode-slider"]}
       />
-      <SwapButton
+      <Title
         derived={derived}
-        clickHandler={buttonClickHandler}
-        className={canvasCssModule["swap-button"]}
+        className={canvasCssModule["title"]}
       />
       <Clock
         derived={derived}
         className={canvasCssModule["clock"]}
       />
-      <Caption
+      <SwapButton
         derived={derived}
-        className={canvasCssModule["caption"]}
+        clickHandler={buttonClickHandler}
+        className={canvasCssModule["swap-button"]}
       />
     </svg>
   )

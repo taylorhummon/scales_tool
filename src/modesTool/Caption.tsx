@@ -12,14 +12,13 @@ export function Caption({
   className,
 }: CaptionParameters): React.ReactNode {
   return (
-    <CaptionCommon
-      firstLine={getFirstLine(derived)}
-      className={className}
-    />
+    <CaptionCommon className={className}>
+      {getCaptionText(derived)}
+    </CaptionCommon>
   )
 }
 
-function getFirstLine(
+function getCaptionText(
   derived: Derived,
 ): React.ReactNode {
   const { currentMusicalKey } = derived
