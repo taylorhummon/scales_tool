@@ -25,6 +25,7 @@ export default function Header() {
       url={url}
       label={label}
       isActive={pathname === url}
+      close={close}
     />
   )
   const aboutLink = (
@@ -32,6 +33,7 @@ export default function Header() {
       url={ABOUT_LINK.url}
       label={ABOUT_LINK.label}
       isActive={pathname === ABOUT_LINK.url}
+      close={close}
     />
   )
 
@@ -53,9 +55,7 @@ export default function Header() {
             {toolLinks}
           </Group>
         </Group>
-        <Group
-          visibleFrom="sm"
-        >
+        <Group visibleFrom="sm">
           {aboutLink}
         </Group>
         <Burger
@@ -83,17 +83,11 @@ export default function Header() {
           mx="-md"
           className={styles["drawer-items"]}
         >
-          <Divider
-            my="sm"
-          />
+          <Divider my="sm" />
           {toolLinks}
-          <Divider
-            my="sm"
-          />
+          <Divider my="sm" />
           {aboutLink}
-          <Divider
-            my="sm"
-          />
+          <Divider my="sm" />
         </ScrollArea>
       </Drawer>
     </header>
@@ -104,19 +98,26 @@ interface NavigationLinkParameters {
   url: string,
   label: string,
   isActive: boolean,
+  close: () => void,
 }
 
 function NavigationLink({
   url,
   label,
   isActive,
+  close,
 }: NavigationLinkParameters): React.ReactNode {
   return (
     <a
       href={url}
       className={styles["link"]}
       onClick={
-        (event) => { if (isActive) event.preventDefault() }
+        (event) => {
+          if (isActive) {
+            event.preventDefault()
+            close()
+          }
+        }
       }
     >
       {label}
