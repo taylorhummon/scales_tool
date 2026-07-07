@@ -18,7 +18,7 @@ export function CanvasLeft({
   return (
     <svg
       className={canvasLeftCssModule["canvas-left"]}
-      viewBox="0 0 80 370"
+      viewBox="0 0 76 370"
       xmlns="http://www.w3.org/2000/svg"
     >
       <AssembledSlider
