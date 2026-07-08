@@ -33,9 +33,6 @@ export function reducer(
   if (action.type === ActionType.SelectExtraNoteNames) {
     return reduceSelectExtraNoteNames(state, action.outsideLabelsOption)
   }
-  if (action.type === ActionType.SelectIsUsingSimplifiedNotes) {
-    return reduceSelectIsUsingSimplifiedNotes(state, action.isUsingSimplifiedNotes)
-  }
   if (action.type === ActionType.ActivateMotion) {
     return reduceActivateMotion(state, action.motion)
   }
@@ -52,14 +49,6 @@ function reduceSelectExtraNoteNames(
 ): State {
   const isUsingRankSpotlight = outsideLabelsOption === LabelsOption.Simplified
   return { ...state, outsideLabelsOption, isUsingRankSpotlight }
-}
-
-function reduceSelectIsUsingSimplifiedNotes(
-  state: State,
-  isUsingSimplifiedNotes: boolean,
-): State {
-  const insideLabelsOption = isUsingSimplifiedNotes ? LabelsOption.Simplified : LabelsOption.Ordinary
-  return { ...state, insideLabelsOption }
 }
 
 function reduceActivateMotion(

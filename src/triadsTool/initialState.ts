@@ -12,7 +12,7 @@ export function getInitialState(
 ): State {
   return {
     anchorOption: AnchorOption.RankNote,
-    insideLabelsOption: LabelsOption.Ordinary,
+    insideLabelsOption: LabelsOption.Simplified,
     outsideLabelsOption: LabelsOption.None,
     triadOriginOption: TriadOriginOption.RankNote,
     animationOption: AnimationOption.Combo,

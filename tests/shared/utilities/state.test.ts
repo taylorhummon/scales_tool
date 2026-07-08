@@ -61,26 +61,6 @@ test("reducer() works for SelectExtraNoteNames action", () => {
   )
 })
 
-test("reducer() works for SelectIsUsingSimplifiedNotes action", () => {
-  expect(
-    reducer(
-      getInitialState(),
-      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: true },
-    ).insideLabelsOption
-  ).toBe(
-    LabelsOption.Simplified
-  )
-
-  expect(
-    reducer(
-      getInitialState(),
-      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: false },
-    ).insideLabelsOption
-  ).toBe(
-    LabelsOption.Ordinary
-  )
-})
-
 test("reducer() works for ActivateMotion action", () => {
   expect(
     reducer(

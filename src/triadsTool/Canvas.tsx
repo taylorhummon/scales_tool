@@ -5,22 +5,22 @@ import { Clock } from "@shared/components/clock/Clock"
 import { type Derived } from "@shared/utilities/derived"
 import { Motion } from "@shared/utilities/motion"
 
-import canvasRightCssModule from "./CanvasRight.module.scss"
+import canvasRightCssModule from "./Canvas.module.scss"
 
 
-interface CanvasRightParameters {
+interface CanvasParameters {
   derived: Derived,
   buttonClickHandler: (motion: Motion) => void,
 }
 
-export function CanvasRight({
+export function Canvas({
   derived,
   buttonClickHandler,
-}: CanvasRightParameters): React.ReactNode {
+}: CanvasParameters): React.ReactNode {
   return (
     <svg
-      className={canvasRightCssModule["canvas-right"]}
-      viewBox="0 0 260 380"
+      className={canvasRightCssModule["canvas"]}
+      viewBox="0 0 430 306"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Title

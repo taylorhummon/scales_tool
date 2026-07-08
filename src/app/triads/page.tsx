@@ -11,9 +11,6 @@ export default function Page() {
       </h1>
       <ul className={styles["instructions"]}>
         <li>
-          Sharp and flat buttons change the scale&apos;s rank.
-        </li>
-        <li>
           Rotation buttons select a triad.
         </li>
       </ul>
