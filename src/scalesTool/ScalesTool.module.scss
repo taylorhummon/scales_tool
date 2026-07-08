@@ -1,15 +1,11 @@
 .canvases {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 40px;
+  flex-direction: row;
+  gap: 5px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 560px) {
   .canvases {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-bottom: 0px;
+    gap: 60px;
   }
 }
