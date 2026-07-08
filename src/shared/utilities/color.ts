@@ -11,8 +11,5 @@ export const ROOT_SPOTLIGHT_FILL = "rgb(208, 214, 253)"
 export const RANK_SPOTLIGHT_STROKE = "rgba(244, 3, 132, 0.8)"
 export const RANK_SPOTLIGHT_FILL = "rgba(244, 3, 132, 0.3)"
 
-export const TRIAD_ROOT_SPOTLIGHT_STROKE = "rgb(211, 145, 1)"
-export const TRIAD_ROOT_SPOTLIGHT_FILL = "rgb(250, 193, 108)"
-
-export const TRIAD_SPOTLIGHT_STROKE = "rgb(255, 205, 4)"
-export const TRIAD_SPOTLIGHT_FILL = "rgb(253, 252, 180)"
+export const TRIAD_SPOTLIGHT_STROKE = "rgb(218, 150, 4)"
+export const TRIAD_SPOTLIGHT_FILL = "rgb(253, 200, 114)"

@@ -86,6 +86,10 @@ select {
   text-transform: none;
 }
 
+svg text {
+  user-select: none;
+}
+
 .fixed-width-font {
   font-family: var(--fixed-width-font);
 }
@@ -94,6 +98,8 @@ select {
   font-weight: bold;
 }
 
-svg text {
-  user-select: none;
+.instructions {
+  padding-left: 0;
+  margin-bottom: 36px;
+  list-style: none;
 }

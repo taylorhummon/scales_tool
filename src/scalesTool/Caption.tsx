@@ -23,11 +23,11 @@ function getCaptionText(
 ): React.ReactNode {
   const { currentMusicalKey } = derived
   const { rank } = currentMusicalKey
-  if (rank === 0)  return "No sharps or flats."
-  if (rank === 1)  return "One sharp."
-  if (rank === -1) return "One flat."
-  if (rank >= 2)   return `${getWrittenOutNumber(rank)} sharps.`
-  if (rank <= -2)  return `${getWrittenOutNumber(- rank)} flats.`
+  if (rank === 0)  return "No sharps or flats"
+  if (rank === 1)  return "One sharp"
+  if (rank === -1) return "One flat"
+  if (rank >= 2)   return `${getWrittenOutNumber(rank)} sharps`
+  if (rank <= -2)  return `${getWrittenOutNumber(- rank)} flats`
   throw `Unexpected rank ${rank}`
 }
 

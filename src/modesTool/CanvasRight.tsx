@@ -19,7 +19,7 @@ export function CanvasRight({
   return (
     <svg
       className={canvasRightCssModule["canvas-right"]}
-      viewBox="0 0 300 370"
+      viewBox="0 0 300 355"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Title

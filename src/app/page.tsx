@@ -1,7 +1,5 @@
 import { ScalesTool } from "@scalesTool/ScalesTool"
 
-import styles from "./page.module.scss"
-
 
 export default function Page() {
   return (
@@ -9,7 +7,7 @@ export default function Page() {
       <h1>
         Scales Tool
       </h1>
-      <ul className={styles["instructions"]}>
+      <ul className="instructions">
         <li>
           Plus and minus buttons change keys within a mode.
         </li>

@@ -1,7 +1,5 @@
 import { TriadsTool } from "@triadsTool/TriadsTool"
 
-import styles from "./page.module.scss"
-
 
 export default function Page() {
   return (
@@ -9,7 +7,7 @@ export default function Page() {
       <h1>
         Triads Tool
       </h1>
-      <ul className={styles["instructions"]}>
+      <ul className="instructions">
         <li>
           Rotation buttons select a triad.
         </li>

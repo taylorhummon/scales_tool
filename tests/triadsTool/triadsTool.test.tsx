@@ -30,6 +30,24 @@ test("<TriadsTool /> works", async () => {
   expect(
     getTriadSpotlight0().getAttribute("class")
   ).toEqual(
+    expect.stringContaining("hour-9")
+  )
+  expect(
+    getTriadSpotlight2().getAttribute("class")
+  ).toEqual(
+    expect.stringContaining("hour-0")
+  )
+  expect(
+    getTriadSpotlight4().getAttribute("class")
+  ).toEqual(
+    expect.stringContaining("hour-3")
+  )
+
+  await user.click(getRotateTriadCwButton())
+
+  expect(
+    getTriadSpotlight0().getAttribute("class")
+  ).toEqual(
     expect.stringContaining("hour-10")
   )
   expect(
@@ -131,23 +149,5 @@ test("<TriadsTool /> works", async () => {
     getTriadSpotlight4().getAttribute("class")
   ).toEqual(
     expect.stringContaining("hour-2")
-  )
-
-  await user.click(getRotateTriadCwButton())
-
-  expect(
-    getTriadSpotlight0().getAttribute("class")
-  ).toEqual(
-    expect.stringContaining("hour-9")
-  )
-  expect(
-    getTriadSpotlight2().getAttribute("class")
-  ).toEqual(
-    expect.stringContaining("hour-0")
-  )
-  expect(
-    getTriadSpotlight4().getAttribute("class")
-  ).toEqual(
-    expect.stringContaining("hour-3")
   )
 })

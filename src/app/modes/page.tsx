@@ -1,7 +1,5 @@
 import { ModesTool } from "@modesTool/ModesTool"
 
-import styles from "./page.module.scss"
-
 
 export default function Page() {
   return (
@@ -9,7 +7,7 @@ export default function Page() {
       <h1>
         Modes Tool
       </h1>
-      <ul className={styles["instructions"]}>
+      <ul className="instructions">
         <li>
           Arrow buttons change the mode.
         </li>

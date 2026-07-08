@@ -8,13 +8,17 @@
 }
 
 .clock {
-  offset-path: path("M 215 180");
+  offset-path: path("M 215 182");
 }
 
 .rotate-button-ccw {
-  offset-path: path("M 33 180");
+  offset-path: path("M 33 182");
 }
 
 .rotate-button-cw {
-  offset-path: path("M 397 180");
+  offset-path: path("M 397 182");
+}
+
+.caption {
+  offset-path: path("M 215 340");
 }

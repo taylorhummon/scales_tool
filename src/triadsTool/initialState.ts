@@ -17,11 +17,11 @@ export function getInitialState(
     triadOriginOption: TriadOriginOption.RankNote,
     animationOption: AnimationOption.Combo,
     isUsingRootSpotlight: false,
-    isUsingRankSpotlight: false,
+    isUsingRankSpotlight: true,
     motion: Motion.Still,
     root: 0,
     rank: 0,
     isCaterpillarPattern: false,
-    triadOffset: -1,
+    triadOffset: -2,
   }
 }

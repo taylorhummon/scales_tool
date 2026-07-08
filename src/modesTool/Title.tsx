@@ -13,12 +13,12 @@ export function Title({
 }: TitleParameters): React.ReactNode {
   return (
     <TitleCommon className={className}>
-      {getText(derived)}
+      {getTitleText(derived)}
     </TitleCommon>
   )
 }
 
-function getText(
+function getTitleText(
   derived: Derived,
 ): React.ReactNode {
   const { currentMusicalKey } = derived

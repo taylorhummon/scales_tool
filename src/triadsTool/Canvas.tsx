@@ -1,3 +1,4 @@
+import { Caption } from "@triadsTool/Caption"
 import { Title } from "@triadsTool/Title"
 
 import { RotateButton } from "@shared/components/button/RotateButton"
@@ -5,7 +6,7 @@ import { Clock } from "@shared/components/clock/Clock"
 import { type Derived } from "@shared/utilities/derived"
 import { Motion } from "@shared/utilities/motion"
 
-import canvasRightCssModule from "./Canvas.module.scss"
+import canvasCssModule from "./Canvas.module.scss"
 
 
 interface CanvasParameters {
@@ -19,31 +20,35 @@ export function Canvas({
 }: CanvasParameters): React.ReactNode {
   return (
     <svg
-      className={canvasRightCssModule["canvas"]}
-      viewBox="0 0 430 306"
+      className={canvasCssModule["canvas"]}
+      viewBox="0 0 430 355"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Title
         derived={derived}
-        className={canvasRightCssModule["title"]}
+        className={canvasCssModule["title"]}
       />
       <Clock
         derived={derived}
-        className={canvasRightCssModule["clock"]}
+        className={canvasCssModule["clock"]}
       />
       <RotateButton
         derived={derived}
         clickHandler={buttonClickHandler}
         onClickMotion={Motion.RotateTriadCCW}
-        className={canvasRightCssModule["rotate-button-ccw"]}
+        className={canvasCssModule["rotate-button-ccw"]}
         dataTestid="rotate-triad-ccw"
       />
       <RotateButton
         derived={derived}
         clickHandler={buttonClickHandler}
         onClickMotion={Motion.RotateTriadCW}
-        className={canvasRightCssModule["rotate-button-cw"]}
+        className={canvasCssModule["rotate-button-cw"]}
         dataTestid="rotate-triad-cw"
+      />
+      <Caption
+        derived={derived}
+        className={canvasCssModule["caption"]}
       />
     </svg>
   )

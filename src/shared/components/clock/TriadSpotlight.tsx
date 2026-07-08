@@ -5,12 +5,7 @@ import {
   getCurrentHour,
   getNextHour,
 } from "@shared/utilities/clock"
-import {
-  TRIAD_ROOT_SPOTLIGHT_STROKE,
-  TRIAD_ROOT_SPOTLIGHT_FILL,
-  TRIAD_SPOTLIGHT_STROKE,
-  TRIAD_SPOTLIGHT_FILL,
-} from "@shared/utilities/color"
+import { TRIAD_SPOTLIGHT_STROKE, TRIAD_SPOTLIGHT_FILL } from "@shared/utilities/color"
 import { buildClassName } from "@shared/utilities/css"
 import { type Derived } from "@shared/utilities/derived"
 import { getBalancedMod7 } from "@shared/utilities/math"
@@ -41,8 +36,8 @@ export function TriadSpotlight({
       cy="0"
       r="14"
       strokeWidth="1.6"
-      stroke={solfegeOffset === 0 ? TRIAD_ROOT_SPOTLIGHT_STROKE : TRIAD_SPOTLIGHT_STROKE}
-      fill={solfegeOffset === 0 ? TRIAD_ROOT_SPOTLIGHT_FILL : TRIAD_SPOTLIGHT_FILL}
+      stroke={TRIAD_SPOTLIGHT_STROKE}
+      fill={TRIAD_SPOTLIGHT_FILL}
     />
   )
 }
