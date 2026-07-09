@@ -13,7 +13,6 @@ const TOOL_LINKS = [
   { url: "/modes/", label: "Modes" },
   { url: "/triads/", label: "Triads" },
 ]
-const ABOUT_LINK = { url: "/about/", label: "About" }
 
 
 export default function Header() {
@@ -25,14 +24,6 @@ export default function Header() {
       url={url}
       label={label}
       isActive={pathname === url}
-      close={close}
-    />
-  )
-  const aboutLink = (
-    <NavigationLink
-      url={ABOUT_LINK.url}
-      label={ABOUT_LINK.label}
-      isActive={pathname === ABOUT_LINK.url}
       close={close}
     />
   )
@@ -54,9 +45,6 @@ export default function Header() {
           >
             {toolLinks}
           </Group>
-        </Group>
-        <Group visibleFrom="sm">
-          {aboutLink}
         </Group>
         <Burger
           opened={opened}
@@ -85,9 +73,6 @@ export default function Header() {
         >
           <Divider my="sm" />
           {toolLinks}
-          <Divider my="sm" />
-          {aboutLink}
-          <Divider my="sm" />
         </ScrollArea>
       </Drawer>
     </header>
