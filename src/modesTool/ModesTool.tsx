@@ -5,6 +5,7 @@ import { useRef, useReducer, useEffect, useCallback } from "react"
 import { getInitialState } from "@modesTool/initialState"
 import { CanvasLeft } from "@modesTool/CanvasLeft"
 import { CanvasRight } from "@modesTool/CanvasRight"
+import { SettingsPanel } from "@modesTool/SettingsPanel"
 
 import { ActionType } from "@shared/utilities/action"
 import { AnimationOption } from "@shared/utilities/clock"
@@ -106,6 +107,10 @@ export function ModesTool(
           buttonClickHandler={buttonClickHandler}
         />
       </div>
+      <SettingsPanel
+        clockSettings={clockSettings}
+        dispatch={dispatch}
+      />
     </div>
   )
 }

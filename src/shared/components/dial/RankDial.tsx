@@ -1,4 +1,3 @@
-import { SHARP, FLAT } from "@shared/classes/Note"
 import { Dial } from "@shared/components/dial/Dial"
 import { DialValue } from "@shared/components/dial/DialValue"
 import { MAX_RANK, MIN_RANK } from "@shared/utilities/rank"
@@ -41,22 +40,9 @@ export function RankDial({
           currentPosition={position}
           nextPosition={position - rankDifference}
         >
-          {getFancyRank(rank)}
+          {rank}
         </DialValue>
       ))}
     </Dial>
   )
-}
-
-function getFancyRank(
-  rank: number,
-): React.ReactNode {
-  const count = Math.abs(rank)
-  if (rank > 0) {
-    return <>{count}{SHARP}</>
-  }
-  if (rank < 0) {
-    return <>{count}{FLAT}</>
-  }
-  return <>0</>
 }

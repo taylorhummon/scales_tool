@@ -1,4 +1,4 @@
-import { Title } from "@modesTool/Title"
+import { Title } from "@triadsTool/Title"
 
 import { Clock } from "@shared/components/clock/Clock"
 import { type Derived } from "@shared/utilities/derived"
@@ -18,7 +18,7 @@ export function CanvasRight({
   return (
     <svg
       className={canvasRightCssModule["canvas-right"]}
-      viewBox="0 0 336 370"
+      viewBox="0 0 336 405"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Title

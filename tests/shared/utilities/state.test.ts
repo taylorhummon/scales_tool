@@ -61,6 +61,62 @@ test("reducer() works for SelectExtraNoteNames action", () => {
   )
 })
 
+test("reducer() works for SelectIsUsingSimplifiedNotes action", () => {
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: true },
+    ).outsideLabelsOption
+  ).toBe(
+    LabelsOption.Simplified
+  )
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: true },
+    ).isUsingRankSpotlight
+  ).toBe(
+    true
+  )
+
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: false },
+    ).outsideLabelsOption
+  ).toBe(
+    LabelsOption.None
+  )
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingSimplifiedNotes, isUsingSimplifiedNotes: false },
+    ).isUsingRankSpotlight
+  ).toBe(
+    false
+  )
+})
+
+test("reducer() works for SelectIsUsingOrdinaryNotes action", () => {
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingOrdinaryNotes, isUsingOrdinaryNotes: true },
+    ).insideLabelsOption
+  ).toBe(
+    LabelsOption.Ordinary
+  )
+
+  expect(
+    reducer(
+      getInitialState(),
+      { type: ActionType.SelectIsUsingOrdinaryNotes, isUsingOrdinaryNotes: false },
+    ).insideLabelsOption
+  ).toBe(
+    LabelsOption.None
+  )
+})
+
 test("reducer() works for ActivateMotion action", () => {
   expect(
     reducer(

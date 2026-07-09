@@ -9,7 +9,10 @@ export default function Page() {
       </h1>
       <ul className="instructions">
         <li>
-          Rotation buttons select a triad.
+          Rotation buttons select the triad.
+        </li>
+        <li>
+          Sharp and flat buttons change the rank.
         </li>
       </ul>
       <TriadsTool />

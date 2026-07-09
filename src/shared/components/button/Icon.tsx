@@ -220,13 +220,13 @@ export function Icon({
     return (
       <g className={className}>
         <path
-          d="M 0 10 A 10, 10, 0, 1, 1, 10 0"
+          d="M 0 8 A 8, 8, 0, 1, 1, 8 0"
           fill="none"
           stroke="black"
           strokeWidth="1.6"
         />
         <polygon
-          points="6 0, 10 5, 14 0"
+          points="4 0, 8 5, 12 0"
           fill="black"
           stroke="black"
           strokeWidth="1"
@@ -238,13 +238,13 @@ export function Icon({
     return (
       <g className={className}>
         <path
-          d="M 0 10 A 10, 10, 0, 1, 0, -10 0"
+          d="M 0 8 A 8, 8, 0, 1, 0, -8 0"
           stroke="black"
           fill="none"
           strokeWidth="1.6"
         />
         <polygon
-          points="-6 0, -10 5, -14 0"
+          points="-4 0, -8 5, -12 0"
           fill="black"
           stroke="black"
           strokeWidth="1"

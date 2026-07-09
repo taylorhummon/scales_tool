@@ -12,8 +12,8 @@ export function getInitialState(
 ): State {
   return {
     anchorOption: AnchorOption.RankNote,
-    insideLabelsOption: LabelsOption.Simplified,
-    outsideLabelsOption: LabelsOption.None,
+    insideLabelsOption: LabelsOption.Ordinary,
+    outsideLabelsOption: LabelsOption.Simplified,
     triadOriginOption: TriadOriginOption.RankNote,
     animationOption: AnimationOption.Combo,
     isUsingRootSpotlight: false,
