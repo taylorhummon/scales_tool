@@ -1,7 +1,7 @@
 # Visual Music Tools
 
 The Visual Music Tools allow you to visually explore patterns among musical scales, modes, 
-and triads. You can try it out at [https://taylorhummon.com/](https://taylorhummon.com/).
+and triads. You can try it out at [https://visualmusictools.taylorhummon.com/](https://visualmusictools.taylorhummon.com/).
 
 
 ## Installation
