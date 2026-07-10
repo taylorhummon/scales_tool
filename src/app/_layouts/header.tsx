@@ -6,6 +6,7 @@ import { Burger, Divider, Drawer, Group, ScrollArea } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 
 import styles from "./header.module.scss"
+import Logo from "./_images/logo.svg"
 
 
 const TOOL_LINKS = [
@@ -42,7 +43,7 @@ export default function Header() {
       <div className={styles["inner"]}>
         <Group>
           <Image
-            src="/logo.svg"
+            src={Logo}
             alt="Visual Music Tools"
             width={205}
             height={24}
