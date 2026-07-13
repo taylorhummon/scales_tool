@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="205"
-   height="24"
-   viewBox="0 0 205 24"
+   width="204"
+   height="32"
+   viewBox="0 0 204 32"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="vmt.svg"
+   sodipodi:docname="logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#000000"
      borderopacity="0.25"
      inkscape:showpageshadow="2"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2"
-     inkscape:cx="60.75"
-     inkscape:cy="57.25"
-     inkscape:window-width="1299"
+     inkscape:zoom="4"
+     inkscape:cx="105.25"
+     inkscape:cy="22.625"
+     inkscape:window-width="1512"
      inkscape:window-height="828"
-     inkscape:window-x="85"
-     inkscape:window-y="79"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -40,15 +40,21 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:37.3333px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;fill:#000000;stroke-width:0.264583"
-       x="2.838583"
-       y="22.298134"
-       id="text1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-1.25px;word-spacing:2px;writing-mode:lr-tb;direction:ltr;fill:#ffffff"
+       x="0.25"
+       y="25.5"
+       id="text2"><tspan
          sodipodi:role="line"
-         id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-2px;word-spacing:2px;fill:#000000;stroke-width:0.264583"
-         x="2.838583"
-         y="22.298134"
-         dx="0 0.81 0 0 0 0 0 0 0 0 0 0 0 -0.47 -2.5999999">Visual Music Tools</tspan></text>
+         id="tspan2"
+         x="0.25"
+         y="25.5"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:26.6667px;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-1.25px"
+         dx="0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 -1.6"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32px;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan3">V</tspan>isual <tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32px;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan4">M</tspan>usic <tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:32px;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+   id="tspan5">T</tspan>ools</tspan></text>
   </g>
 </svg>

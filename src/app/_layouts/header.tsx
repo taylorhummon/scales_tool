@@ -36,8 +36,8 @@ export default function Header() {
           <Image
             src={Logo}
             alt="Visual Music Tools"
-            width={205}
-            height={24}
+            width={204}
+            height={32}
           />
           <Group
             ml={45}
