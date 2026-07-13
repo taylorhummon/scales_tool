@@ -1,8 +1,6 @@
 .header {
   height: 60px;
   background: linear-gradient(to right, rgb(139, 40, 70), rgb(207, 133, 114));
-  padding-left: var(--mantine-spacing-md);
-  padding-right: var(--mantine-spacing-md);
 }
 
 .inner {
@@ -35,7 +33,7 @@
     color: black;
     padding: 18px 16px;
 
-     &:hover {
+    &:hover {
       background-color: rgba(240, 240, 240);
     }
   }
