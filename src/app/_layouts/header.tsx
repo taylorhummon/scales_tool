@@ -38,6 +38,7 @@ export default function Header() {
             alt="Visual Music Tools"
             width={204}
             height={32}
+            loading="eager"
           />
           <Group
             ml={45}
